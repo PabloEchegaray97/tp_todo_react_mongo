@@ -1,0 +1,43 @@
+.navbar {
+  background-color: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-spacer {
+  width: 48px;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.theme-toggle-button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  color: var(--color-text-primary);
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--color-hover);
+}
+
+.theme-toggle-button svg {
+  width: 24px;
+  height: 24px;
+}

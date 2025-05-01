@@ -1,0 +1,5 @@
+.main-content {
+  background-color: var(--color-bg-primary);
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+}

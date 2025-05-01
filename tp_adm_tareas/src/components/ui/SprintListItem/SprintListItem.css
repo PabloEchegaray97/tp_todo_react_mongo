@@ -1,0 +1,97 @@
+.sprint-list-item {
+  padding: 0;
+  margin-bottom: 4px;
+  background-color: var(--color-bg-card);
+  position: relative;
+}
+
+.sprint-list-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.sprint-list-item-content-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  text-align: left;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+
+.sprint-list-item-link:hover .sprint-list-item-content-wrapper {
+  background-color: var(--color-hover);
+}
+
+.sprint-list-item-icon {
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-primary);
+}
+
+.sprint-list-item-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.sprint-list-item-content {
+  flex: 1;
+  min-width: 0;
+  margin-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.sprint-list-item-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
+}
+
+.sprint-list-item-dates {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.2;
+}
+
+.sprint-list-item-content-header {
+  display: flex;
+}
+
+.sprint-list-item-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: var(--color-hover);
+}
+
+.action-button svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--color-text-primary);
+}

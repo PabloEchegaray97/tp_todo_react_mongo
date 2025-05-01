@@ -1,0 +1,112 @@
+.containerPrincipalModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: brightness(50%) blur(10px);
+  animation: fadeIn 0.5s;
+  z-index: 9999;
+}
+
+.contentPopUP {
+  color: var(--color-text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  background-color: var(--color-bg-card);
+  width: 40vw;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  animation: fadeIn 0.5s;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.formContent input,
+textarea {
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5rem;
+  resize: none;
+  margin: 0.5rem 0;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid var(--color-border);
+  border-radius: 0.3rem;
+  color: var(--color-text-primary);
+}
+
+.buttonCard {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.buttonCard button {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.buttonCard button:hover {
+  background-color: var(--color-hover);
+}
+
+.title {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+.inputContainer {
+  display: flex;
+  gap: 1rem;
+}
+.inputContainerItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contentDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
